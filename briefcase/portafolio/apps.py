@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AcountsConfig(AppConfig):
+class PortafolioConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'briefcase.acounts'
+    name = 'briefcase.portafolio'

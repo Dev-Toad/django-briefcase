@@ -1,11 +1,11 @@
 
 from django.contrib import admin
 from django.urls import path
+from django.urls.conf import include
 from .core import views as v
+
+from .frontend import urls as frontend_urls
 urlpatterns = [
-    path('', v.home, name='home'),
-    path('about-me/', v.about, name="about", ),
-    path('contact-me/', v.contact, name="contact", ),
-    path('portafolio-me/', v.portafolio, name="portafolio", ),
-    path('admin/', admin.site.urls),
+    path("", include(frontend_urls)),
 ]
+
