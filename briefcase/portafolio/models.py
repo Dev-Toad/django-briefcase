@@ -12,6 +12,11 @@ class Project(models.Model):
     )
     image = models.ImageField(
         _("Imagen"),
+        upload_to = "projects"
+    )
+    url = models.URLField(
+        null=True,
+        blank=True,
     )
     created_at = models.DateTimeField(
         auto_now_add=True

@@ -1,26 +1,26 @@
 from django.urls import path
 
-from ..views.core import home, about, contact, portafolio
-
+# from ..views.core import home, about, contact, portafolio
+from ..views import core, portafolio
 urlpatterns = [
     path(
         "",
-        home,
+        core.home,
         name="home"
     ),
     path(
         "about",
-        about,
+        core.about,
         name="about"
     ),
     path(
         "contact",
-        contact,
+        core.contact,
         name="contact"
     ),
     path(
         "portafolio",
-        portafolio,
+        portafolio.portafolio,
         name="portafolio"
     )
 ]

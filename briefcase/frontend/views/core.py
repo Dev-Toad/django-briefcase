@@ -12,6 +12,3 @@ def contact(request):
     return render(request, "briafcase/storefront/core/contact.html")
 
 
-def portafolio(request):
-    return render(request, "briafcase/storefront/core/portafolio.html")
-
